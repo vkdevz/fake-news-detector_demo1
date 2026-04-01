@@ -10,8 +10,9 @@ nltk.download('stopwords', quiet=True)
 stop_words = set(stopwords.words('english'))
 
 # ⚠️ Put your API keys here
-GROQ_API_KEY = "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"
-NEWSAPI_KEY = "2d6583102e6144349c2baf6854a9751e"
+import os
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+NEWSAPI_KEY = os.environ.get("NEWSAPI_KEY")
 
 # Setup Groq
 groq_client = Groq(api_key=GROQ_API_KEY)
