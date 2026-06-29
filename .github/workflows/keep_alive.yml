@@ -1,0 +1,18 @@
+name: Prevent Streamlit Hibernation
+
+on:
+  schedule:
+    - cron: '0 */10 * * *' # Automatically runs every 10 hours
+
+jobs:
+  ping_repo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Create empty commit
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit --allow-empty -m "Chore: Reset Streamlit sleep timer"
+          git push
