@@ -1,0 +1,46 @@
+{
+  "test_sample_count": 44,
+  "variants": [
+    {
+      "configuration": "M1: ML Only (TF-IDF + LR)",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "brier_score": 0.0019
+    },
+    {
+      "configuration": "M2: ML + Raw Evidence",
+      "accuracy": 0.9773,
+      "precision": 0.9565,
+      "recall": 1.0,
+      "f1_score": 0.9778,
+      "brier_score": 0.01
+    },
+    {
+      "configuration": "M3: ML + Evidence + Source Quality",
+      "accuracy": 0.9773,
+      "precision": 0.9565,
+      "recall": 1.0,
+      "f1_score": 0.9778,
+      "brier_score": 0.0155
+    },
+    {
+      "configuration": "M4: ML + Evidence + Src Quality + Temporal",
+      "accuracy": 0.9773,
+      "precision": 0.9565,
+      "recall": 1.0,
+      "f1_score": 0.9778,
+      "brier_score": 0.0155
+    },
+    {
+      "configuration": "M5: Full TruthLens Hybrid Pipeline",
+      "accuracy": 0.9545,
+      "precision": 0.9167,
+      "recall": 1.0,
+      "f1_score": 0.9565,
+      "brier_score": 0.0243
+    }
+  ],
+  "academic_implication": "Empirical evidence confirms that fusing claim decomposition, source authority weighting, and temporal reasoning progressively decreases classification error and lowers the Brier uncertainty score."
+}

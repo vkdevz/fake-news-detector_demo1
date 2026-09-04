@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.npm
+*.log
+
+# Databases & local state
+*.sqlite
+*.db
+backend/truthlens.db
+
+# OS
+.DS_Store
+Thumbs.db
+.env

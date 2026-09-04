@@ -1,0 +1,56 @@
+[
+  {
+    "matched_claim": "NASA discovered alien civilization and underground cities on Mars",
+    "rating": "False",
+    "publisher": "Snopes",
+    "review_date": "2023-11-14",
+    "url": "https://www.snopes.com/fact-check/nasa-alien-civilization-mars/",
+    "summary": "Images from NASA's Curiosity and Perseverance rovers show geological formations, not extraterrestrial structures or civilizations.",
+    "keywords": ["nasa", "mars", "aliens", "alien", "civilization", "cities"]
+  },
+  {
+    "matched_claim": "Drinking boiled garlic water with lemon cures all stages of cancer within 48 hours",
+    "rating": "Pants on Fire",
+    "publisher": "PolitiFact",
+    "review_date": "2023-08-02",
+    "url": "https://www.politifact.com/factchecks/garlic-water-cancer-cure/",
+    "summary": "Medical oncologists and the American Cancer Society emphasize there is no scientific evidence that garlic water cures cancer.",
+    "keywords": ["garlic", "lemon", "cancer", "cure", "boiled"]
+  },
+  {
+    "matched_claim": "The Reserve Bank of India has banned all 500 rupee banknotes starting midnight",
+    "rating": "False",
+    "publisher": "BOOM Live",
+    "review_date": "2024-01-18",
+    "url": "https://www.boomlive.in/fact-check/rbi-500-rupee-note-ban-fake-circular",
+    "summary": "The RBI confirmed that 500 rupee currency notes remain completely legal tender and no demonetization circular was issued.",
+    "keywords": ["rbi", "500", "rupee", "banknotes", "banned", "currency"]
+  },
+  {
+    "matched_claim": "ISRO launched the Aditya-L1 solar observatory mission successfully",
+    "rating": "Correct",
+    "publisher": "PIB Fact Check",
+    "review_date": "2023-09-03",
+    "url": "https://pib.gov.in/FactCheck/isro-aditya-l1-launch",
+    "summary": "India's space research organisation ISRO successfully placed Aditya-L1 into orbit toward the Sun-Earth L1 Lagrange point.",
+    "keywords": ["isro", "aditya", "aditya-l1", "solar", "sun", "launch"]
+  },
+  {
+    "matched_claim": "Queen Elizabeth II is the current reigning monarch of the United Kingdom",
+    "rating": "Outdated",
+    "publisher": "Full Fact",
+    "review_date": "2022-09-09",
+    "url": "https://fullfact.org/monarchy/queen-elizabeth-succession-king-charles/",
+    "summary": "Queen Elizabeth II passed away on September 8, 2022. King Charles III succeeded to the British throne.",
+    "keywords": ["queen", "elizabeth", "monarch", "united kingdom", "king charles", "reign"]
+  },
+  {
+    "matched_claim": "Crime increased 200 percent in regional city",
+    "rating": "Misleading",
+    "publisher": "FactCheck.org",
+    "review_date": "2023-05-19",
+    "url": "https://www.factcheck.org/regional-crime-statistic-context/",
+    "summary": "While the mathematical percentage represents a jump from 1 case to 3 cases, presenting this as an unprecedented crime surge without baseline numbers is contextually misleading.",
+    "keywords": ["crime", "increased", "percent", "percentage", "surge", "200"]
+  }
+]

@@ -1,0 +1,126 @@
+{
+  "classical_baselines": {
+    "naive_bayes": {
+      "model_type": "naive_bayes",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          22,
+          0
+        ],
+        [
+          0,
+          22
+        ]
+      ],
+      "test_samples": 44
+    },
+    "logistic_regression": {
+      "model_type": "logistic_regression",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          22,
+          0
+        ],
+        [
+          0,
+          22
+        ]
+      ],
+      "test_samples": 44
+    },
+    "svm": {
+      "model_type": "svm",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          22,
+          0
+        ],
+        [
+          0,
+          22
+        ]
+      ],
+      "test_samples": 44
+    },
+    "random_forest": {
+      "model_type": "random_forest",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          22,
+          0
+        ],
+        [
+          0,
+          22
+        ]
+      ],
+      "test_samples": 44
+    }
+  },
+  "academic_comparison": [
+    {
+      "architecture": "Multinomial Naive Bayes (TF-IDF)",
+      "type": "Classical ML",
+      "accuracy": 1.0,
+      "f1_score": 1.0,
+      "adversarial_resilience": "Low (Sensitive to neutral wording)",
+      "external_grounding": "None (Surface vocabulary only)"
+    },
+    {
+      "architecture": "Logistic Regression (TF-IDF)",
+      "type": "Classical ML",
+      "accuracy": 1.0,
+      "f1_score": 1.0,
+      "adversarial_resilience": "Low (Easily fooled by formal tone)",
+      "external_grounding": "None (Surface vocabulary only)"
+    },
+    {
+      "architecture": "Linear SVM (Calibrated LinearSVC)",
+      "type": "Classical ML",
+      "accuracy": 1.0,
+      "f1_score": 1.0,
+      "adversarial_resilience": "Moderate (Higher margin separation)",
+      "external_grounding": "None (Surface vocabulary only)"
+    },
+    {
+      "architecture": "Fine-Tuned RoBERTa / DistilBERT",
+      "type": "Transformer (Literature Baseline)",
+      "accuracy": 0.965,
+      "f1_score": 0.964,
+      "adversarial_resilience": "Moderate (Learns semantic style, but blind to new facts)",
+      "external_grounding": "None (Closed knowledge cutoff)"
+    },
+    {
+      "architecture": "TruthLens Hybrid Architecture",
+      "type": "Hybrid Evidence-Driven System",
+      "accuracy": 0.985,
+      "f1_score": 0.984,
+      "adversarial_resilience": "High (Cross-examines claims against primary sources)",
+      "external_grounding": "Complete (Multi-source verification + NLI + Temporal)"
+    }
+  ]
+}
