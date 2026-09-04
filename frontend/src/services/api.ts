@@ -1,6 +1,7 @@
 import { VerificationResponse, DemoScenario } from '../types/verification';
 
-const API_BASE = '/api';
+const RAW_BASE = import.meta.env.VITE_API_BASE_URL || '';
+export const API_BASE = RAW_BASE ? `${RAW_BASE.replace(/\/$/, '')}/api` : '/api';
 
 export async function verifyText(text: string): Promise<VerificationResponse> {
   const res = await fetch(`${API_BASE}/verify/text`, {

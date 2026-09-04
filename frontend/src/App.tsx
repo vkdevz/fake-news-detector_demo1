@@ -4,6 +4,7 @@ import { VerifyPage } from './pages/VerifyPage';
 import { SourcesPage } from './pages/SourcesPage';
 import { HistoryPage, VerificationHistoryItem } from './pages/HistoryPage';
 import { VerificationResponse } from './types/verification';
+import { API_BASE } from './services/api';
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState('verify');
@@ -44,7 +45,7 @@ export const App: React.FC = () => {
   // Keep-alive heartbeat: ping backend health endpoint every 10 minutes to prevent Render idle spin-down
   useEffect(() => {
     const keepAliveInterval = setInterval(() => {
-      fetch('/api/health')
+      fetch(`${API_BASE}/health`)
         .then((res) => {
           if (res.ok) {
             console.log('🔄 RENDER KEEP-ALIVE HEARTBEAT: Client ping [HTTP 200]');
